@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:Notes.ViewModels"
+             x:Class="Notes.Views.NotePage"
              Title="Note">
     <ContentPage.BindingContext>
         <viewModels:NoteViewModel />
@@ -19,6 +20,7 @@
             <Button Grid.Column="1"
                     Text="Delete"
                     Command="{Binding DeleteCommand}"/>
+
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
